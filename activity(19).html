@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<style type="text/css">
+.container{
+display:flex;
+justify-content:center;
+}
+p{
+position:relative;
+background-color:red;
+color:white;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:10px;
+padding-right:10px;
+border:1px solid black;
+border-radius:20px;
+z-index:1;
+}
+.content{
+position: absolute;
+top:40px;
+width:100px;
+height:0px;
+border:1px solid black;
+transition:all 1s;
+visibility:hidden;
+}
+.number1:hover+.content{
+height:150px;
+visibility: visible;
+}
+</style>
+<body>
+<div class="container">
+<div class="number1">
+<p>1</p>
+</div>
+<div class="content">
+</div>
+</div>
+</body>
+</html>
